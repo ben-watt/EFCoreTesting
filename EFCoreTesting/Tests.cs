@@ -151,6 +151,8 @@ namespace EFCoreTesting
             Assert.Single(result.Children);
             Assert.Equal("D4506C2B-C837-4BF3-BAB6-D131EC8E296F", result.Children.ElementAt(0).Id);
 
+            result.Value = "updated";
+
             var child = result.Children.FirstOrDefault();
 
             child.Value = "updated";
@@ -163,6 +165,7 @@ namespace EFCoreTesting
             Assert.Equal(parentId, final.Id);
             Assert.NotEmpty(final.Children);
             Assert.Single(final.Children);
+            Assert.Equal("updated", final.Value);
             Assert.Equal("updated", final.Children.ElementAt(0).Value);
         }
     }
@@ -194,6 +197,8 @@ namespace EFCoreTesting
                 .Include(x => x.Children)
                 .Where(x => x.Id == parent.Id)
                 .FirstOrDefaultAsync();
+
+            dataParent.Value = parent.Value;
 
             foreach (var child in parent.Children)
             {
@@ -251,6 +256,7 @@ namespace EFCoreTesting
             return new DomainParent
             {
                 Id = Id,
+                Value = Value,
                 Children = Children?.Select(x => new DomainChild
                 {
                     Id = x.Id,
@@ -277,6 +283,7 @@ namespace EFCoreTesting
             return new DataParent
             {
                 Id = Id,
+                Value = Value,
                 Children = Children?.Select(x => new DataChild
                 {
                     Id = x.Id,
