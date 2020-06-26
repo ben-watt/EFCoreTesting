@@ -253,7 +253,8 @@ namespace EFCoreTesting
                 Id = Id,
                 Children = Children?.Select(x => new DomainChild
                 {
-                    Id = x.Id
+                    Id = x.Id,
+                    Value = x.Value
                 })
             };
         }
@@ -278,7 +279,8 @@ namespace EFCoreTesting
                 Id = Id,
                 Children = Children?.Select(x => new DataChild
                 {
-                    Id = x.Id
+                    Id = x.Id,
+                    Value = x.Value
                 }).ToList()
             };
         }

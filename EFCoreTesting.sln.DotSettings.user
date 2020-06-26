@@ -8,4 +8,7 @@
       &lt;TestId&gt;xUnit::1F9F02BF-73F1-4EEF-96A4-1CCD00584C34::.NETCoreApp,Version=v3.1::EFCoreTesting.IEnumerableTests.Update_IEnumerable&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
   &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6dd25785_002Dd577_002D450e_002Da8d4_002De30e5e2a3ad9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;EFCoreTesting&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Dev\Source Code\Other\EFCoreTesting\EFCoreTesting" Presentation="&amp;lt;EFCoreTesting&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
