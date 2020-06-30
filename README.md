@@ -108,4 +108,4 @@ Why? Well turns out that if you don't `ToList` the `Select` statement you end up
 
 This is a really easy trap to fall into and can cause a number of difficult to diagnose issues. So, is there a nice way to remember that we need to call `ToList` ? Yes, we if we ensure we don't expose `IEnumerable` in our domain objects and instead expose `ICollection`, `IReadonlyCollection `, `IList` or `IReadonlyList` we will get compile time errors if we don't call `ToList`.
 
-![image-20200630150622117](C:\Users\ben.watt\AppData\Roaming\Typora\typora-user-images\image-20200630150622117.png)
+![image-20200630150622117](./data-mapping.png)
